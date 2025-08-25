@@ -303,7 +303,7 @@ def eval():
     model.eval()
 
     # 初始化采样器
-    sampler = GaussianaussianDiffusionSampler(
+    sampler = GaussianDiffusionSampler(
         model, float(args.beta_1), float(args.beta_T), args.T, img_size=int(args.img_size),
         mean_type=args.mean_type, var_type=args.var_type, sample_type=args.sample_type, sample_steps=args.num_step).to(
         device)
